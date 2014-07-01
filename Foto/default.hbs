@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>{{meta_title}}</title>
+	<meta name="description" content="{{meta_description}}"/>
+	<link rel="stylesheet" href="{{asset "css/style.min.css"}}"/>
+	<script src="//use.edgefonts.net/pt-serif:n4,n7:all;droid-sans:n4,n7:all.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+	<script src="/theme-config.js"></script>
+	<script src="{{asset "js/script.min.js"}}"></script>
+	<script src="{{asset "js/flowtype.min.js"}}"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<script>
+		var blogUrl = "{{@blog.url}}";
+		var disqus_enabled;
+		var disqus_shortname;
+		var sidebar_enabled;
+	</script>
+	{{ghost_head}}
+</head>
+<body>
+	<div class="photoview-photo">
+		<div class="photoview-photo-close"></div>
+		<img class="photoview-photo-img"/>
+	</div>
+	<div class="photoview-slideshow">
+		<div class="photoview-slideshow-left"></div>
+		<div class="photoview-slideshow-right"></div>
+		<div class="photoview-slideshow-prev"></div>
+		<div class="photoview-slideshow-next"></div>
+		<div class="photoview-slideshow-close"></div>
+		<div class="photoview-slideshow-images"></div>
+	</div>
+	<section id="sidebar">
+		<div id="sidebar-bg">
+			<div id="sidebar-close"></div>
+			<div id="user-avatar"></div>
+			<p id="user-name"></p>
+			<div id="user-description"></div>
+		</div>
+		<ul id="sidebar-menu"></ul>
+	</section>
+	{{{body}}}
+</body>
+</html>
